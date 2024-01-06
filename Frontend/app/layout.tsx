@@ -37,6 +37,7 @@ export default function MainLayout({
         <li><Link href="/">home</Link></li>
         <li><Link href="/dashboard">Dashboard</Link></li>
         <li><Link href="/settings ">settings</Link></li>
+        <li><Link href="/cari">cari orang</Link></li>
       </ul>
       
 

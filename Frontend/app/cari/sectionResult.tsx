@@ -1,15 +1,18 @@
+import Link from 'next/link'
 import React from 'react'
+import useSWR from 'swr'
 const fetcher = (url:string) => fetch(url).then(res => res.json())
 interface props{
     query:string
 
+
 }
 export default function sectionResult({query}:props) {
-      const {data, eror}=useSWR(`https://api.github.com/search/users?q=${query}`,fetcher)
+      const {data, error}=useSWR(`https://api.github.com/search/users?q=${query}`,fetcher)
       var loading = ! data && !error 
 
   return (
-    <div style = {{marginTop:12px}} >
+    <div style = {{marginTop:"12 px"}} >
         <p>hasil pencarian : {query}</p>
         <div>
           {loading && "tunggu sebentar...."}

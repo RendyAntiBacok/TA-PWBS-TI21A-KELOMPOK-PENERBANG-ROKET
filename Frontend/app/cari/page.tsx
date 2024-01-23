@@ -1,24 +1,23 @@
 "use client"
-import React ,{ useState} from 'react'
-import result from './result'
+import React, { useState } from 'react'
+    
+export default function Search() {
+    const[query, setQuery] = useState('')
 
-export default function page() {
+    const onSearch=(e:any)=>{
+        e.preventDefault()
+        const inputQuery = e.target[0].value;
+        setQuery(inputQuery)
+    }
 
-  const [query,setQuery] = useState('')
-
-  const onSearch=(e:any)=>{
-      e.preventDefaul()
-      const inputQuery = e.target[0].value;
-      setQuery(inputQuery)
-  }
-  return ( 
+  return (
     <div>
-        <form onSubmit={onSearch}>
-            <input placeholder='cari obat' />
-            <button>cari obat</button>
-            
+        <form onSubmit={onSearch} className='w-full flex space-x-3 mt-5'>
+            <input className='bg-zinc-100 w-5/6 px-3' placeholder='Cari User' />
+            <button className='bg-blue-600 text-white w-1/6 py-2 rounded-md'>Cari obat</button>
         </form>
-      {query && <sectionResult query={query } />}
+        
+        
     </div>
   )
 }

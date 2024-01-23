@@ -36,12 +36,12 @@ export default function MainLayout({
         
       <img src="./images/logo.png" alt="logo" />
       </div>
-      <div className="flex flex-1 " >
+      <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start " >
         <ul className=" flex space-x-4 ">
-          <li><Link href="/">home</Link></li>
-          <li><Link href="/dashboard">Dashboard</Link></li>
-          <li><Link href="/settings ">settings</Link></li>
-          <li><Link href="/cari">cari orang</Link></li>
+          <li className ="bg-white text-black rounded-md px-3 py-2 text-sm font-medium"><Link href="/">home</Link></li>
+          <li className ="bg-white text-black rounded-md px-3 py-2 text-sm font-medium"><Link href="/dashboard">Dashboard</Link></li>
+          <li className ="bg-white text-black rounded-md px-3 py-2 text-sm font-medium"><Link href="/settings ">settings</Link></li>
+          <li className ="bg-white text-black rounded-md px-3 py-2 text-sm font-medium"><Link href="/cari">cari orang</Link></li>
         </ul>
       </div>
       </header>

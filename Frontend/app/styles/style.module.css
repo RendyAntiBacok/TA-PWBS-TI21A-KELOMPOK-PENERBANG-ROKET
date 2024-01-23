@@ -9,7 +9,7 @@
 .header
 {
     display: flex;
-    background-color: #008d1e;
+    background-color: #2cf361;
     /* perataan horizontal */
     justify-content: start;
     /* perataan vertical */
@@ -29,7 +29,7 @@
 
 .content_bg
 {
-    background-color: #e3e3e3;
+    background-color: rgb(219, 213, 213);
 }
 
 .footer

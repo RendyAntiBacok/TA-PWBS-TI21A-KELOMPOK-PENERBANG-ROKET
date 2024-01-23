@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google'
 import Link from 'next/link';
 import { useRouter } from 'next/navigation'; 
 
-//  import './styles/globals.css'
+ import './styles/globals.css'
 // panggil style module
  import style from "./styles/style.module.css"
 
@@ -31,14 +31,21 @@ export default function MainLayout({
 
       <body className={style.layout}>
       <header className={style.header}>
+        <div>
+
+        
       <img src="./images/logo.png" alt="logo" />
+      </div>
+      <div className="flex flex-1 " >
+        <ul className=" flex space-x-4 ">
+          <li><Link href="/">home</Link></li>
+          <li><Link href="/dashboard">Dashboard</Link></li>
+          <li><Link href="/settings ">settings</Link></li>
+          <li><Link href="/cari">cari orang</Link></li>
+        </ul>
+      </div>
       </header>
-      <ul>
-        <li><Link href="/">home</Link></li>
-        <li><Link href="/dashboard">Dashboard</Link></li>
-        <li><Link href="/settings ">settings</Link></li>
-        <li><Link href="/cari">cari orang</Link></li>
-      </ul>
+      
       
 
 
@@ -46,7 +53,7 @@ export default function MainLayout({
       {children}
       </section>
 
-      <footer className={style.layout}>&copy; 2023 | PWBL - TI20A</footer>
+      <footer className={style.layout}>&copy; 2023 | PWBS - TI21A</footer>
       </body>
     </html>
   )

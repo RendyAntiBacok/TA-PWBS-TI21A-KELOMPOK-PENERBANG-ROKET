@@ -11,6 +11,6 @@ const RepoLIst = async ({slug}:any) => {
       <div>
         {JSON.stringify(datarepos)}
       </div>
-    </>
+    </> 
 }
 export default Repolist

@@ -20,7 +20,7 @@ export default async function Detailcari({ params }: { params: { slug: string } 
         {JSON.stringify(dataUser)}
       </div>
       <div style={{marginTop:"10px"}}>
-      <suspanse fallback={<div>mencoba menampilkan repository....</div>}>
+      <suspanse fallback={<div> sedang mencoba menampilkan data obat....</div>}>
       <repoList slug={params.slug}/>
       </suspanse>
     </div>

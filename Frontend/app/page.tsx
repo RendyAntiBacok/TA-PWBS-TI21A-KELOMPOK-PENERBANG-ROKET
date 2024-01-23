@@ -17,7 +17,7 @@ export default function  Mainpage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className=" text-4xl font-bold tracking-tight text-white sm:text-6xl">apotek roket</h2>
-            <p className=" mt-6 font-medium text-lg leading-2 text-white">buka setiap hari 24 jam.</p>
+            <p className=" mt-6 font-medium text-lg leading-2 text-white">buka setiap hari</p>
           </div>
           <div className="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 text-base font-semibold leading-7 text-white sm:grid-cols-2 md:flex lg:gap-x-10">
@@ -30,7 +30,7 @@ export default function  Mainpage() {
 
         <div className="mt-5">
           <div className ="flex justify-center mb-5">
-            <h2> best recomendation</h2>
+            <h2> best recomendation in market</h2>
           </div>
         </div>
 
